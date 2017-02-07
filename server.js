@@ -9,7 +9,7 @@ server.on('request', function(request,response){
   console.log("Got request from: %s", request.connection.remoteAddress);
   response.statusCode = 200;
   response.setHeader('Content-Type', 'text/plain');
-  response.end(answer);
+  response.end(answer + '\n');
 });
 
 //Start the server
