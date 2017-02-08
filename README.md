@@ -1,5 +1,5 @@
 # A simple web server
-A simple web server in nodejs. It is intended for demo only.
+A simple web server in nodejs. It is intended for demo only, no production.
 
 ## Local deployment
 On CentOS linux, install latest Nodejs package.
