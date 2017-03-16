@@ -17,5 +17,9 @@ COPY . /usr/src/app
 # Declare Env variables
 ENV MESSAGE "Hello World!"
 
+# Define the log mount point
+VOLUME /var/log
+
+# Expose the port server listen to
 EXPOSE 8080
 CMD [ "npm", "start" ]
