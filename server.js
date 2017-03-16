@@ -3,7 +3,7 @@
 var http = require('http');
 var fs = require('fs');
 var ip = require('ip');
-var answer = process.env.MESSAGE || 'Hello World!';
+var message = process.env.MESSAGE || 'Hello World!';
 var server = http.createServer();
 
 const PORT = 8080;
@@ -19,8 +19,10 @@ server.on('request', function(req,resp){
   
   // Prepare and send the rensponse
   resp.statusCode = 200;
-  resp.setHeader('Content-Type', 'text/plain');
-  resp.end(answer + ' from ' + HOST + '\n' );
+  resp.setHeader('Content-Type', 'text/html');
+  var body = message + ' from ' + HOST;
+  var html = '<html><head></head><body>' + body + '</body></html>\n'; 
+  resp.end(html);
   
   // Log the client IP address
   var stamp = Date.now();
