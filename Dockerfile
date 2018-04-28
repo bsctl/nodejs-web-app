@@ -1,5 +1,5 @@
 # Create the image from the latest nodejs
-FROM node:latest
+FROM node:7.7.2
 
 MAINTAINER kalise <https://github.com/kalise/>
 
