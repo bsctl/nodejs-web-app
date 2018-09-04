@@ -1,6 +1,6 @@
 {
   "name": "nodejs-web-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple web server in nodejs",
   "author": "kalise",
   "main": "server.js",
@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "ip": "^1.1.4"
+    "ip": "^1.1.5"
   },
   "repository": {
     "type": "git",
