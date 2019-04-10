@@ -25,3 +25,4 @@ Start the container by setting the desired answer message in the MESSAGE env var
     [root@centos]# curl localhost:80
     Thanks for all the fish ...
     [triggering a webhook]
+    [triggering another webhook]
