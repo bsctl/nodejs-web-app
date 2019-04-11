@@ -21,7 +21,7 @@ server.on('request', function(req,resp){
   resp.statusCode = 200;
   resp.setHeader('Content-Type', 'text/html');
   var body = message + ' from ' + HOST;
-  var html = '<html><head><title>Nodejs Web App</title></head><body><h1>' + body + '</h1></body></html>\n'; 
+  var html = '<html><head><title>Hello Gdansk</title></head><body><h1>' + body + '</h1></body></html>\n'; 
   resp.end(html);
   
   // Log the client IP address
