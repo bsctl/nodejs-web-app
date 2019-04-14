@@ -1,7 +1,7 @@
 # Create the image from the latest nodejs
 FROM node:8
 
-MAINTAINER kalise <https://github.com/kalise/>
+LABEL kalise <https://github.com/kalise/>
 
 # Create app directory
 RUN mkdir -p /usr/src/app
