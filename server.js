@@ -21,7 +21,6 @@ server.on('request', function(req,resp){
   var body = message + ' from ' + HOST;
   var html = '<html><head><title>Hello</title></head><body><h1>' + body + '</h1></body></html>\n'; 
   resp.end(html);
-  });
 });
 
 //Start the server
