@@ -9,7 +9,7 @@ On CentOS linux, install and start Docker
 Install git and clone the reposistory
 
     [root@centos]# yum install -y git
-    [root@centos]# git clone https://github.com/kalise/nodejs-web-app
+    [root@centos]# git clone https://github.com/bsctl/nodejs-web-app
     [root@centos]# cd nodejs-web-app
 
 Build a Docker image
@@ -24,4 +24,3 @@ Start the container by setting the desired answer message in the MESSAGE env var
     [root@centos]# docker run --name=web -p 80:8080 -d -e MESSAGE="Thanks for all the fish ..." nodejs-web-app
     [root@centos]# curl localhost:80
     Thanks for all the fish ...
-    [trigger]

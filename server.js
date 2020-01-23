@@ -8,8 +8,6 @@ var server = http.createServer();
 
 const PORT = 8080;
 const HOST = ip.address();
-const LOGDIR = '/var/log/';
-const LOGFILE = 'requests.log';
 
 //Define behaviour of the server receiving requests
 server.on('request', function(req,resp){
@@ -23,11 +21,6 @@ server.on('request', function(req,resp){
   var body = message + ' from ' + HOST;
   var html = '<html><head><title>Hello</title></head><body><h1>' + body + '</h1></body></html>\n'; 
   resp.end(html);
-  
-  // Log the client IP address
-  var stamp = Date.now();
-  fs.appendFile(LOGDIR + LOGFILE, stamp + ' ' + remote + '\n', encoding='utf8', function (e) {
-    if (e) return console.log('Something went wrong with logging %s', e);
   });
 });
 
